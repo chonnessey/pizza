@@ -31,3 +31,18 @@ PizzaPie.prototype.myToppings = function() {
   }
   return this.price
 }
+
+// UI logic
+
+$(document).ready(function() {
+  $("#pie").submit(function(event) {
+    event.preventDefault();
+    const pieSize = $("#size").val();
+    const pieToppings = $(".topping").val();
+
+    let userPie = new PizzaPie(pieSize, pieToppings)
+    userPie.sizePie();
+    userPie.myToppings();
+    $("#pizza-price").text(userPie.price)
+  })
+})

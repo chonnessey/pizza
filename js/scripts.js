@@ -9,7 +9,6 @@ function PizzaPie(size, topping1, topping2, topping3) {
 }
 
 
-let testPizza = new PizzaPie("small", "topping")
 
 PizzaPie.prototype.sizePie = function() {
   let pieSize = this.size
@@ -53,7 +52,7 @@ $(document).ready(function() {
     let userPie = new PizzaPie(pieSize, topping1, topping2, topping3)
     userPie.sizePie();
     userPie.myToppings();
-    $("#pizza-price").text(userPie.price)
+    $("#pizza-price").text(`The price of your pizza is $${userPie.price}.00 dollars. Thank you for choosing the E-pizza parlor!`)
     console.log(userPie)
   })
 })

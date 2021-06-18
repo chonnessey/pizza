@@ -1,8 +1,10 @@
 // Business Logic
 
-function PizzaPie(size, toppings) {
+function PizzaPie(size, topping1, topping2, topping3) {
   this.size = size;
-  this.toppings = toppings;
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
   this.price = 0;
 }
 
@@ -26,8 +28,14 @@ PizzaPie.prototype.sizePie = function() {
 }
 
 PizzaPie.prototype.myToppings = function() {
-  if(this.toppings === "topping") {
+  if(this.topping1 === "topping1") {
     this.price += 20;
+  } 
+  if(this.topping2 === "topping2") {
+    this.price += 25;
+  } 
+  if(this.topping3 === "topping3") {
+    this.price += 30;
   }
   return this.price
 }
@@ -38,9 +46,11 @@ $(document).ready(function() {
   $("#pie").submit(function(event) {
     event.preventDefault();
     const pieSize = $("#size").val();
-    const pieToppings = $(".topping").val();
+    const topping1 = $(".topping1").val();
+    const topping2 = $(".topping2").val();
+    const topping3 = $(".topping3").val();
 
-    let userPie = new PizzaPie(pieSize, pieToppings)
+    let userPie = new PizzaPie(pieSize, topping1, topping2, topping3)
     userPie.sizePie();
     userPie.myToppings();
     $("#pizza-price").text(userPie.price)

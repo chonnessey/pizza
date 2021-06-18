@@ -11,3 +11,9 @@ Code:
 `let testPizza = new PizzaPie("medium")`
 `testPizza.sizePie()`
 Expected Output: `100`
+
+Test: It should add the price of the pizza by 150 if the user selects "large"
+Code: 
+`let testPizza = new PizzaPie("large")`
+`testPizza.sizePie()`
+Expected Output: `150`

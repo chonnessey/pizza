@@ -7,7 +7,7 @@ function PizzaPie(size, toppings) {
 }
 
 
-let testPizza = new PizzaPie("large",)
+let testPizza = new PizzaPie("family",)
 
 PizzaPie.prototype.sizePie = function() {
   let pieSize = this.size
@@ -17,6 +17,8 @@ PizzaPie.prototype.sizePie = function() {
     this.price += 100;
   } else if(pieSize === "large") {
     this.price += 150;
+  } else if(pieSize === "family") {
+    this.price += 200;
   }
   return this.price;
 }

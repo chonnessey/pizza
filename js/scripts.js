@@ -53,6 +53,5 @@ $(document).ready(function() {
     userPie.sizePie();
     userPie.myToppings();
     $("#pizza-price").text(`The price of your pizza is $${userPie.price}.00 dollars. Thank you for choosing the E-pizza parlor!`)
-    console.log(userPie)
   })
 })

@@ -7,7 +7,7 @@ function PizzaPie(size, toppings) {
 }
 
 
-let testPizza = new PizzaPie("small", "1")
+let testPizza = new PizzaPie("small", "topping")
 
 PizzaPie.prototype.sizePie = function() {
   let pieSize = this.size
@@ -26,13 +26,8 @@ PizzaPie.prototype.sizePie = function() {
 }
 
 PizzaPie.prototype.myToppings = function() {
-  let toppingArray = []
-  const toppings = this.toppings
-  toppings.forEach(function(topping) {
-    toppingArray.push(topping)
-    if(topping === "1") {
-      this.price += 20
-    }
-  })
-  return this.price;
+  if(this.toppings === "topping") {
+    this.price += 20;
+  }
+  return this.price
 }

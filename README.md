@@ -1,4 +1,4 @@
-Describe: sizePie()
+Describe: `sizePie()`
 
 Test: It should add the price of the pizza by 50 if the user selects "small"
 Code: 
@@ -23,3 +23,11 @@ Code:
 `let testPizza = new PizzaPie("family")`
 `testPizza.sizePie()`
 Expected Output: `200`
+
+Describe: `myToppings()`
+
+Test: It should add the price of the pizza by 20 if the user selects a topping.
+Code: 
+`let testPizza = new PizzaPie("topping")`
+`testPizza.myToppings()`
+Expected Output: `20`

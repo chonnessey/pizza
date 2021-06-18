@@ -10,65 +10,67 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>E-Pizza Parlor</h1>
-      <p>Fill out the options below to see the price of your pizza!</p>
-    </div>
-
-    <form id="pie">
-      <div class="form-group">
-        <label for="size">Select a size for your pizza</label>
-        <select id="size" class="custom-select" required>
-          <option value="">Choose one please</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="family">Family</option>
-        </select>
+  <div id="background">
+    <div class="container">
+      <div id="intro">
+        <h1>E-Pizza Parlor</h1>
+        <p>Fill out the options below to see the price of your pizza!</p>
       </div>
 
-      <div class="form-group">
-        <label for="topping">Select your first topping</label>
-        <select class="custom-select topping1">
-          <option value="">Optional</option>
-          <option value="topping1">Pepporoni</option>
-          <option value="topping1">Jalapeños</option>
-          <option value="topping1">Shrooms</option>
-          <option value="topping1">Bacon</option>
-          <option value="topping1">Anchovies</option>
-        </select>
+      <form id="pie">
+        <div class="form-group">
+          <h4>Pick a Size!</h4>
+          <select id="size" class="custom-select" required>
+            <option value="">Choose one please</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="family">Family</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <h4>Maybe a topping?</h4>
+          <select class="custom-select topping1">
+            <option value="">Optional</option>
+            <option value="topping1">Pepporoni</option>
+            <option value="topping1">Jalapeños</option>
+            <option value="topping1">Shrooms</option>
+            <option value="topping1">Bacon</option>
+            <option value="topping1">Anchovies</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <h4>Two?</h4>
+          <select class="custom-select topping2">
+            <option value="">Optional</option>
+            <option value="topping2">Pepporoni</option>
+            <option value="topping2">Jalapeños</option>
+            <option value="topping2">Shrooms</option>
+            <option value="topping2">Bacon</option>
+            <option value="topping2">Anchovies</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <h4>Not enough? Pick another!</h4>
+          <select class="custom-select topping3">
+            <option value="">Optional</option>
+            <option value="topping3">Pepporoni</option>
+            <option value="topping3">Jalapeños</option>
+            <option value="topping3">Shrooms</option>
+            <option value="topping3">Bacon</option>
+            <option value="topping3">Anchovies</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-lg btn-success">What do I owe ya?</button>
+      </form>
+
+      <div id="pizza-price">
+
       </div>
-
-      <div class="form-group">
-        <label for="topping">Select your second topping</label>
-        <select class="custom-select topping2">
-          <option value="">Optional</option>
-          <option value="topping2">Pepporoni</option>
-          <option value="topping2">Jalapeños</option>
-          <option value="topping2">Shrooms</option>
-          <option value="topping2">Bacon</option>
-          <option value="topping2">Anchovies</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="topping">Select your third topping</label>
-        <select class="custom-select topping3">
-          <option value="">Optional</option>
-          <option value="topping3">Pepporoni</option>
-          <option value="topping3">Jalapeños</option>
-          <option value="topping3">Shrooms</option>
-          <option value="topping3">Bacon</option>
-          <option value="topping3">Anchovies</option>
-        </select>
-      </div>
-
-      <button type="submit" class="btn-lg btn-success">Pizza Pie</button>
-    </form>
-
-    <div id="pizza-price">
-
     </div>
   </div>
 </body>

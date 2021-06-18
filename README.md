@@ -26,8 +26,20 @@ Expected Output: `200`
 
 Describe: `myToppings()`
 
-Test: It should add the price of the pizza by 20 if the user selects a topping.
+Test: It should add the price of the pizza by 20 if the user selects one topping.
 Code: 
-`let testPizza = new PizzaPie("topping")`
+`let testPizza = new PizzaPie("topping1")`
 `testPizza.myToppings()`
 Expected Output: `20`
+
+Test: It should add the price of the pizza by 25 if the user selects two toppings.
+Code: 
+`let testPizza = new PizzaPie("topping2")`
+`testPizza.myToppings()`
+Expected Output: `25`
+
+Test: It should add the price of the pizza by 25 if the user selects three toppings.
+Code: 
+`let testPizza = new PizzaPie("topping3")`
+`testPizza.myToppings()`
+Expected Output: `30`

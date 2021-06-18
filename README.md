@@ -1,3 +1,25 @@
+# _E-Pizza Parlor_ :pizza:
+
+#### _This project updates the price of a pizza depending on the options the user selects._
+
+
+#### By _**Adrian Camacho**_
+
+## Technologies Used :floppy_disk:
+
+* _HTML_
+* _CSS_
+* _VS code_
+* _Bootstrap_
+* _JavaScript_
+* _JQuery 3.6.0_
+
+## Description :pencil:
+
+_This application gives users the options to select the size of a pizza and toppings. It updates the price of the pizza depending on the size and toppings of the user's choosing._
+
+## Specs :pushpin:
+
 Describe: `sizePie()`
 
 Test: It should add the price of the pizza by 50 if the user selects "small"
@@ -43,3 +65,26 @@ Code:
 `let testPizza = new PizzaPie("topping3")`
 `testPizza.myToppings()`
 Expected Output: `30`
+
+
+
+## Setup/Installation Requirements :triangular_ruler:
+
+* Clone this repo: `git clone https://github.com/chonnessey/pizza.git`
+* Navigate to directory `cd pizza`
+* Open file into a text editor of your choosing.
+* Open `index.html` in your browser.
+* Choose a size and toppings for your pizza to see your price!
+
+
+## Known Bugs :bug:
+
+* _No Known Bugs._ 
+
+## License :guardsman:
+
+MIT &copy; 2021 _Adrian Camacho_
+
+## Contact Information :mailbox:
+
+_Adrian Camacho: adriancamacho18@gmail.com_

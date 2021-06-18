@@ -54,5 +54,6 @@ $(document).ready(function() {
     userPie.sizePie();
     userPie.myToppings();
     $("#pizza-price").text(userPie.price)
+    console.log(userPie)
   })
 })
